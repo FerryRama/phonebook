@@ -1,0 +1,11 @@
+{
+  "responseCodeMapping":
+  {
+    "RC00" : "SUCCESS",
+    "RC01" : "Email Not Valid",
+    "RC02" : "Email Exist",
+    "RC03" : "PhoneNum Exist",
+    "RC04" : "workPhone Exist",
+    "RC05" : "Data Not Found"
+  }
+}

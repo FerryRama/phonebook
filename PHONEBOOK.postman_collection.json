@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "ecf837a5-7dc4-46fa-bd88-e00957a8103b",
+		"name": "PHONEBOOK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21462247"
+	},
+	"item": [
+		{
+			"name": "Create New Phone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Eko\",\n    \"email\": \"ferry@gmail.com\",\n    \"phoneNum\": \"08326123\",\n    \"workPhone\": \"0821472\",\n    \"address\": \"BSI\",\n    \"lastName\": \"Sumanto\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/restv1/phonebook/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"restv1",
+						"phonebook",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inquiry Phone",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Eko\",\n    \"email\": \"@gmail.com\",\n    \"phoneNum\": \"08326123\",\n    \"workPhone\": \"0821472\",\n    \"address\": \"BSI\",\n    \"lastName\": \"Sumanto\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/restv1/phonebook/inquiry/52",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"restv1",
+						"phonebook",
+						"inquiry",
+						"52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Eko\",\n    \"email\": \"@gmail.com\",\n    \"phoneNum\": \"08326123\",\n    \"workPhone\": \"0821472\",\n    \"address\": \"BSI\",\n    \"lastName\": \"Sumanto\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/restv1/phonebook/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"restv1",
+						"phonebook",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Phone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"52\",\n    \"firstName\": \"Ayam\",\n    \"email\": \"s@gmail.com\",\n    \"phoneNum\": \"08326123\",\n    \"workPhone\": \"0821472\",\n    \"address\": \"BSI\",\n    \"lastName\": \"Goreng\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/restv1/phonebook/edit",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"restv1",
+						"phonebook",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Phone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\",\n    \"firstName\": \"Ayam\",\n    \"email\": \"eksus@gmail.com\",\n    \"phoneNum\": \"08326123\",\n    \"workPhone\": \"0821472\",\n    \"address\": \"BSI\",\n    \"lastName\": \"Goreng\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/restv1/phonebook/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"restv1",
+						"phonebook",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
